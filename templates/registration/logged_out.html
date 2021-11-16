@@ -1,0 +1,36 @@
+
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}
+   About Blog
+{% endblock %}
+
+{% block body %}
+<body style="background-color:lightseagreen;">
+        <h3 class="text-white" style="background-color: rgba(12, 0, 0, 0.877);"><b>Thank You For Vigiting...</b></h3>
+ 
+        <main class="container">
+               <div class="row">
+                   <div class="col-md-6">
+                    <img src="{% static 'home/image/login.png' %}" alt="Avatar" width="100%">
+
+                   </div>
+
+                    <section class="contact content-section col-md-6" style="border: rgb(56, 20, 14); background-color: rgb(18, 162, 167);">
+                        <h1 class=" text-center"><b>Logout</b></h1><hr style="color: maroon;">
+                        <div class="container text-center">
+                            <a class="btn btn-dark " href="/user/login/">Login_Again</a>  
+                            <a class="btn btn-dark " href="{% url 'password_reset' %}">Forget Password</a><br><br>
+                            <a class="btn btn-dark " href="{% url 'register'%}">Register</a> <br><br>
+                            <a class="btn btn-dark " href="{% url 'indexpage'%}">Home</a>
+                            <a class="btn btn-dark " href="{% url 'aboutpage'%}">About</a>
+                        
+                        </div>                         
+                    </section>
+                   
+           </main>
+           <br>
+</body>
+
+{% endblock %}

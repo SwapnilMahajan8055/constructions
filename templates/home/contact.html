@@ -1,0 +1,55 @@
+<html>
+{% extends 'home/logbase.html' %}
+    <head>
+            {% block title %}
+                <title>Contact</title>
+            {% endblock %}
+   
+    </head>
+    <body>
+        {% block body %}
+        {% if messages %}
+        {% for message in messages %}
+        {% if message.tags %}
+        <h5 style="background-color: rgba(12, 0, 0, 0.877);" class="text-white">{{ message.tags }}</h5>
+        {% endif %} 
+        {% endfor %}
+        {% endif %}
+        
+        <section class="contact content-section" style="background-color:rgba(22, 3, 12, 0.719);">
+            <div class="container">
+                <header class="w3-heading py-lg-5 pt-5 text-center">
+                    <h1 class="text-white"><b>Contact Us</b></h1>
+                </header>
+                <div class="row form-container py-3">
+                    <div class="col-md-8 contact-form">
+                        <h4 class="mb-4 text-white">Drop us a line</h4>
+                            <form class="contactForm" method="POST" action="">
+                                {% csrf_token %}
+                                      {{ form.as_p }}
+                                        <input type="submit" value="submit">
+                            </form>
+
+                    </div>
+
+                    
+                    <div class="col-md-4 agile-w3ls-contact-address mt-sm-4 mt-0">
+                        <h4 class="mb-4 text-white">Address</h4>
+                        <address>
+                            <p>
+                                <a href="https://www.google.com/maps/place/Parola,+Maharashtra+425111/@20.8792207,75.1026247,14z/data=!3m1!4b1!4m5!3m4!1s0x3bd9371ab47a2ab1:0xea105c96acec6b28!8m2!3d20.8822034!4d75.1253492" ><b>🌏 <br> Parola, Jalgoan, Maharashtra, India ,Pin code :425401</code></b></a>
+                            </p>
+                            <p>
+                                <a href="mailto:info@example.com"><b>📩  Mahajansp1998@gmail.com</b></a>
+                            </p>
+                            <p>
+                                <a href="tel:+91-73509-42634"> <b>☎ <br> +91 8055925548</b></a>
+                            </p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    {% endblock %}
+    </body>
+</html>

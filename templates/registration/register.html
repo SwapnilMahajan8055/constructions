@@ -1,0 +1,38 @@
+
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}
+   About Blog
+{% endblock %}
+
+{% block body %}
+<body style="background-color:lightseagreen;">
+        <main class="container">
+               <div class="row">
+                   <div class="col-md-6">
+                    <img src="{% static 'home/image/login1.png' %}" alt="Avatar" width="100%">
+
+                   </div>
+                        
+                    <section class="contact content-section col-md-6" style="border: rgb(56, 20, 14);">
+                                   <form id="login-form" class="form" action="" method="post">
+                        <h1 class=" text-center"><b>Register</b></h1></b><hr>
+                        <div class="text-center "><b>
+                            <form action="" method="post">
+                            {% csrf_token %}
+                            {% for fm in form %}
+                            {{ fm.label_tag }} {{ fm }} {{ fm.errors|striptags }}<br>
+                            {% endfor %}
+                            
+                            <input type="submit" name="submit" class="btn btn-dark btn-md" value="Register">
+                            </form>  </b>  
+                      
+                        </div>                         
+                    </form> 
+                    </section>
+                   
+           </main>
+</body>
+
+{% endblock %}

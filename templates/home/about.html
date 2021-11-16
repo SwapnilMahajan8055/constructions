@@ -1,0 +1,44 @@
+
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}
+   About Blog
+{% endblock %}
+
+{% block body %}
+<body style="background-color: rgb(32, 2, 4);">
+<section class="contact content-section bg-dark" >
+<main class="container">
+       <div class="row">
+           <div class="col-md-4">
+                  <div class="container" style="margin-top: 40px;">
+                    <img src="{% static 'home/image/s1.jpg' %}" alt="Avatar" width="280px" height="300px" class="image">
+                  </div>
+           </div>
+           <div class="col-md-8">
+               <div class="container" style="margin-top: 40px;"> 
+                   <h1 class="text-white">About Founder</h1>
+
+                      <h6 class="text-warning"><b>Mr S. P. Mahajan (B.Voc)</b>, Graduate from Kavayitri Bahinabai Chaudhari North Maharashtra University Jalgaon .</h6>
+
+                        <h2 class="text-white">Contact to KC :</h2>
+                          <pre><h6 class="text-warning " ><b>
+  KC(Khandeshi Construction)
+  at Parola,Jalgoan,Maharastra
+  Pin code :425111.
+  
+  Ph.No : +91 - 8055925548,9094193888
+                            </b>
+                          </h6>
+                          </pre>
+
+                       </div>
+
+                   </div>
+       </div>
+   </main>>
+</section>
+</body>
+
+{% endblock %}

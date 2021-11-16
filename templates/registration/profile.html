@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel='stylesheet' href="fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=cyrillic,latin-ext,vietnamese">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'home/css/login.css' %}">
+	<link rel="stylesheet" href="{% static 'home/css/main.css' %}"> 
+
+    {% if title %}
+    <title>Django {{ title }} </title>
+    {% else %}
+    <title></title>
+    {% endif %}
+</head>
+
+<body style="background-color: rgba(12, 0, 0, 0.877)n;">
+    
+    
+    
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand mr-4" href="{% url 'profile' %}">
+                    <img src="{% static 'home/image/logo.png' %}" alt="Avatar" width="100px" class="image">
+                </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link" href="{% url 'profile' %}">Home</a>
+                    <a class="nav-item nav-link" href="{% url 'logaboutpage' %}">About</a>
+                    <a class="nav-item nav-link" href="{% url 'service' %}">Services</a>
+                    <a class="nav-item nav-link" href="{% url 'clientpage' %}">Clients</a>
+                    <a class="nav-item nav-link" href="{% url 'banner' %}">Album</a>
+                    <a class="nav-item nav-link" href="{% url 'contactpage' %}">Contact</a>
+          
+                </div>
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="{% url 'password_change' %}">Change Password</a>  
+                    <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
+                </div>
+
+                </div>
+
+            </div>
+        </nav>
+</header>
+
+
+
+<div class="carousel-inner">
+    <div class="item active">
+      <img src="{% static 'home/image/1.jpg' %}" alt="Chicago" style="width:100%;" >
+       <div class="carousel-caption">
+       <div class="hero-image">
+        <div class="hero-text">
+          <a class="center" href="#">
+            <img src="{% static 'home/image/logo1.png' %}" alt="Avatar" width="100px" class="image">
+          </a>
+          <h3 class="text-warning">Khandeshi construction</h3>            
+          <a href="/plans/" class="btn btn-primary btn-lg active bg-success" role="button" aria-pressed="true">Plans...</a>
+          <a href="/model/" class="btn btn-primary btn-lg active bg-danger" role="button" aria-pressed="true">Home Model...</a>
+          <a href="/banner/" class="btn btn-primary btn-lg active bg-info" role="button" aria-pressed="true">Album...</a>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+  
+
+
+
+<header class="w3-heading py-lg-5 pt-5 text-center">
+    <h1>Services</h1>
+</header>
+<main class="container">
+<div class="row">
+    <div class="col-md-12">
+        <div class="container">
+    <section class="content-section bg-dark " >
+        <main class="container">
+            <div class="row">
+                <div class="col-md-4">
+                       <div class="container" margin-top:90px>
+                         <img src="{% static 'home/image/pc.jpg' %}" alt="Avatar" width="300px" class="image">
+                       </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <h3 class="text-white text-center">Pre-construction services</h3>   
+                        <p class="text-warning"> Everything starts with pre-construction services. As soon as the journey for a new building project begins, there is a number of tasks and questions that the team should look into. Simply put, this is the time where an idea is gradually turning into an actual project and that practical aspects of the vision in discussion are analysed. </p>      
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="content-section bg-dark " >
+        <main class="container">
+            <div class="row">
+                <div class="col-md-4">
+                       <div class="container">
+                         <img src="{% static 'home/image/pm.jpg' %}" alt="Avatar" width="300px" class="image">
+                       </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <h3 class="text-white text-center">project management</h3>  
+                        <p class="text-warning"> Once the project starts progressing, there are many different elements that should be taken into consideration. From project initiation to closure, there should be solid collaboration between the various agents and good team coordination.
+
+
+                            It goes without saying that, data plays a substantial role in this process and allow quick and well-analysed decisions. </p>       
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="content-section bg-dark " >
+        <main class="container">
+            <div class="row">
+                <div class="col-md-4">
+                       <div class="container">
+                         <img src="{% static 'home/image/db.jpeg' %}" alt="Avatar" width="300px" class="image">
+                       </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <h3 class="text-white text-center">Design-build</h3>
+                        <p class="text-warning">The design-build method has attracted a lot of attention lately. Having the same team providing both the design and construction services can boost your project’s efficiency and minimize risk. Moreover, keeping the design and construction phases connected can help you obtaining a better understanding of the potential challenges that might come along you</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+</section>    
+<section class="content-section bg-dark " >
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                   <div class="container">
+                     <img src="{% static 'home/image/bs.jfif' %}" alt="Avatar" width="300px" class="image">
+                   </div>
+            </div>
+            <div class="col-md-8">
+                <div class="container">
+                    <h3 class="text-white text-center">Building services</h3>
+                    <p class="text-warning"> 
+                        Our design/build services are the right fit for many of our clients.  This integrated approach encourages each discipline at the table to offer valuable information focused on design, constructability and budget throughout all phases of the project.  Ideas build upon one another, and designs progress with creative solutions and cost- and time-saving alternatives that ensure your vision.  From concept to completion, our team works seamlessly to create a streamlined and rewarding client experience, a process that delivers real value, and a final product that exceeds expectations. </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
+<section class="content-section bg-dark " >
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                   <div class="container">
+                     <img src="{% static 'home/image/as.jpg' %}" alt="Avatar" width="300px" class="image">
+                   </div>
+            </div>
+            <div class="col-md-8">
+                <div class="container">
+                    <h3 class="text-white text-center">Architectural Design</h3>
+                    <p class="text-warning"> 
+                        After the standards are set during the pre-construction phase, the client will have a comprensive understanding of the and financial needs, project schedule, cost, job site, and your facility’s architectural and mechanical requirements. Next, your construction team and project managers partner with the architectural team to value engineer cost savings into the design.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
+<section class="content-section bg-dark " >
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                   <div class="container">
+                     <img src="{% static 'home/image/ms.jpg' %}" alt="Avatar" width="300px" class="image">
+                   </div>
+            </div>
+            <div class="col-md-8">
+                <div class="container">
+                    <h3 class="text-white text-center">Mechanical Services</h3>   
+                    <pre class="text-warning">
+1.Firefighting Systems
+2.Elevators & Escalators
+3.HVAC Systems (heating, ventilation, and air-conditioning
+systems)
+4.Gas Supply Systems (such as for heating and cooking in
+residential buildings, or oxygen and nitrogen in hospitals)
+5.Compressed Air Systems used in industries  
+                    </pre>     
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
+<section class="content-section bg-dark " >
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                   <div class="container">
+                     <img src="{% static 'home/image/es.jpg' %}" alt="Avatar" width="300px" class="image">
+                   </div>
+            </div>
+            <div class="col-md-8">
+                <div class="container">
+                    <h3 class="text-white text-center">Electrical Services</h3>         
+                    <pre class="text-warning">
+1.Power Supply
+2.Backup Power (such as diesel generators)
+3.Emergency Power (such as battery-based 
+uninterrupted power supply)
+                    </pre>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+</section>  
+<section class="content-section bg-dark " >
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                   <div class="container">
+                     <img src="{% static 'home/image/ps.png' %}" alt="Avatar" width="300px" class="image">
+                   </div>
+            </div>
+            <div class="col-md-8">
+                <div class="container">
+                    <h3 class="text-white text-center">Plumbing Systems</h3>         
+                    <pre class="text-warning"> 
+1.Water Supply
+2.Drainage of Wastes
+3.Water Recycling Systems 
+4.Rainwater Harvesting
+5.Storm Water Drainage
+
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>  
+</div>
+</div>   
+</div>
+</main>
+
+<section class="content-section" style="background-color:rgb(6, 25, 27);" >
+<div class="container " style="background-color:rgb(6, 25, 27);">
+<div class="row text-center text-white">
+    <div class="col-lg-8 mx-auto">
+        <br>
+        <br>
+        <h1 class="display-4 text-white"><b>OFFICE TEAM</b></h1>
+        <p class="lead mb-0 text-warning">This My<b> KD </b>(Khandeshi Construction) Company Team</p>
+        <br>
+        <br>
+    </div>
+</div>
+</div><!-- End -->
+
+
+<div class="container" style="background-color:rgb(6, 25, 27);">
+<div class="row text-center">
+
+    <!-- Team item -->
+    <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+            <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div><!-- End -->
+
+    <!-- Team item -->
+    <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+            <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div><!-- End -->
+
+    <!-- Team item -->
+    <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+            <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div><!-- End -->
+
+    <!-- Team item -->
+    <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+            <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+            <ul class="social mb-0 list-inline mt-3">
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div><!-- End -->
+</div>
+</div>
+</section>
+
+
+    <section class="contact content-section" style="background-color: rgba(29, 19, 3, 0.377);">
+    <div class="container-fluid py-md-5 py-3 py-sm-2 text-center">
+        <header>
+            <h1 class="text-warning"><b>CURRENT PROJECTS</b></h1>
+            <br>
+            <br>
+        </header>
+             
+                <div>
+                <a class="image-gal" href="{% static 'home/image/c1.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/c1.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/d.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/d.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/e.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/e.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/f.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/f.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/ms.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/ms.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/i.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/i.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/l.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/l.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/v.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/v.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/w.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/w.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/y.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/y.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+            </div>
+      
+  
+  
+    </div>
+    <!-- //gallery container -->
+  </section>
+
+
+  <section class="contact content-section" style="background-color: rgba(8, 4, 12, 0.219);">
+  <div class="container-fluid py-md-5 py-3 py-sm-2 text-center">
+      <header>
+          <h1 class="text-warning"><b>COMPLETED PROJECTS</b></h1>
+          <br>
+          <br>
+      </header>
+           
+              <div>
+               <a class="image-gal" href="{% static 'home/image/a3.jpg' %}" data-gal="prettyPhoto[gallery]">
+                  <img src="{% static 'home/image/a3.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                </a>
+                <a class="image-gal" href="{% static 'home/image/a4.jpg' %}" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'home/image/a4.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+              </a>
+              <a class="image-gal" href="{% static 'home/image/a6.jpg' %}" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'home/image/a6.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+              </a>
+              <a class="image-gal" href="{% static 'home/image/c.jpg' %}" data-gal="prettyPhoto[gallery]">
+                <img src="{% static 'home/image/c.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+              </a>    
+          </div>  
+  </div>
+  <!-- //gallery container -->
+</section>
+
+  
+
+
+
+
+
+
+   
+
+<section class="contact content-section" style="background-color:red;">
+<div class="container">
+    <header class="w3-heading py-lg-5 pt-5 text-center">
+        <h1 class="text-white"><b>Contact Us</b></h1>
+    </header>
+    <div class="row form-container py-3">
+        <div class="col-md-8 contact-form">
+            <h4 class="mb-4 text-white">Drop us a line</h4>
+                <form id="contactForm" method="post" action="#">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name..." value="" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your email..." value="" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone..." value="" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" name="message" placeholder="Your message..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <a class="btn btn-success " href="{% url 'contactpage' %}">Send</a> <br><br>
+                    </div>
+                </form>
+        </div>
+        <div class="col-md-4 agile-w3ls-contact-address mt-sm-4 mt-0">
+            <h4 class="mb-4 text-white">Address</h4>
+            <address>  
+            <p class="text-white">
+                <a href="https://www.google.com/maps/place/Parola,+Maharashtra+425111/@20.8792207,75.1026247,14z/data=!3m1!4b1!4m5!3m4!1s0x3bd9371ab47a2ab1:0xea105c96acec6b28!8m2!3d20.8822034!4d75.1253492" ><b>🌏 <br> Parola, Jalgoan, Maharashtra, India ,Pin code :425401</code></b></a>
+            </p>
+                <p class="text-white">
+                    <a href="mailto:info@example.com"><b>📩  mahajansp1998@gmail.com</b></a>
+                </p>
+                <p class="text-white">
+                    <a href="tel:+91-73509-42634"> <b>☎  +91 8055925548</b></a>
+                </p>
+            </address>
+        </div>
+    </div>
+</div>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+   
+
+
+    
+    
+    
+    
+              <!-- Footer -->
+    <footer id="footer">
+      <div class="container py-5">
+          <div class="row text-center">
+              <div class="col-md-12 w3-social segment">
+                <br>
+                  <h4>Contact </h4>
+                  <ul class="social-icons d-flex justify-content-center">
+  
+                          <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                              </svg>
+                          </a>
+                      
+                          <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                              </svg>
+                          </a>
+                      
+                          <a href="#">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                  <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                              </svg>
+                          </a>
+                          <a href="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                </svg>
+                          </a>
+                      
+                  </ul>
+              </div>
+              <!-- /.col-md-12 -->
+          </div>
+          <!-- /.row -->
+
+      </div>
+      <!-- /.container -->
+
+      <div class="w3l-copynote py-3">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 text-center">
+                      <p> &copy; 2020. Khandeshi developer. All rights reserved | Design by Swapnil Mahajan</a>
+                      </p>
+                  </div>
+                  <!-- /.col-md-12 -->
+
+              </div>
+              <!-- /.row -->
+          </div>
+          <!-- /.container -->
+      </div>
+      <!-- /.copynote -->
+
+  <a href="#" id="toTop" style="display: block;">
+      <span id="toTopHover" style="opacity: 1;"> </span>
+  </a>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+
+body{
+    margin-top: 90px;
+    margin-bottom: 120px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+#footer{
+    background-color: rgba(12, 139, 44, 0.041);
+    color: rgba(2, 0, 0, 0.185)  ;
+}
+h1,h2,h3,h4,h5,h6{
+    color: rgb(5, 5, 49);
+}
+.bg-steel{
+    background-color: green;
+}
+.site-header .navbar-nav .nav-link:hover{
+    color: white;
+    background-color: brown;
+    border-radius: 20px;
+}
+
+.content-section{
+    border: 2px solid red;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.article-title{
+    color: #444444;
+}
+
+a.article-title:hover{
+    color: #428bca;
+    text-decoration: none;
+}
+
+.article-metadata{
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+    border-bottom: 2px solid green;
+}
+
+.article-metadata a:hover{
+    color: red;
+    text-decoration: none;
+}
+.green-color {
+    color:green;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+footer#footer {
+    background-color:coral ;
+    /* Dark color/Footer color, can be changed via colors.css */
+    color: #fff;
+}
+
+footer h2 {
+    display: inline-block;
+    color: #fff;
+}
+
+footer h4 {
+    margin: 0 0 20px 0;
+    padding: 0;
+    color: #fff;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: underline;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+footer p a:hover {
+    color: rgb(130, 165, 1);
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+footer ul.blog-entries,
+footer ul.twitter-entries {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer ul.blog-entries li,
+footer ul.twitter-entries li {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+footer ul.blog-entries li span,
+footer ul.twitter-entries li span {
+    display: block;
+    color: #6d7579;
+}
+
+footer .w3l-copynote {
+    background: rgba(54, 53, 54, 1);
+    /* Dark color/Footer color, can be changed via colors.css */
+}
+
+footer .w3-social a {
+    display: inline-block;
+    padding: 6px;
+}
+
+.scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 4%;
+    right: 1%;
+    z-index: 100;
+}
+
+.scroll-top a:link,
+.scroll-top a:visited {
+    display: inline-block;
+    padding: 5px 15px;
+    color: #fff;
+    border: 1px solid rgba(254, 82, 76, 1);
+    background: rgba(254, 82, 76, 1);
+    /* Primary color, can be changed via colors.css */
+    font-size: 30px;
+}
+
+.scroll-top a:hover {
+    border: 1px solid #fff;
+    /* Hover border color, can be changed via colors.css */
+    outline: 0;
+    color: #fff;
+    background: #df514c;
+    /* Hover color, can be changed via colors.css */
+}
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    border: none;
+    text-indent: 100%;
+    background: url(../images/top_move.png) no-repeat 0px 0px;
+}
+
+/*- Typography page -*/
+
+.inner-banner {
+    background: url('../images/banner1.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 300px;
+}
+
+div#breadcrumb_wrapper {
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+div#breadcrumb_wrapper h2 {
+    text-transform: uppercase;
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+div#breadcrumb_wrapper h6 {
+    color: #fff;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/*- Typography page -*/
+
+/*- Responsive -*/
+@media (max-width:1680px) {
+	.portfolio-area li {
+		width: 310px;
+	}
+}
+@media (max-width:1600px) {
+	.portfolio-area li {
+		width: 295px;
+	}
+}
+@media (max-width:1440px) {
+    #message {
+        width: 55%;
+        left: 25%;
+        font-size: 12px;
+    }
+    .wthree-abt-info {
+        padding: 5%;
+    }
+	.portfolio-area li {
+		width: 264px;
+	}
+}
+@media (max-width:1366px) {
+    .wthree-abt-info {
+        padding: 3%;
+    }
+	.portfolio-area li {
+		width: 250px;
+	}
+}
+@media (max-width:1280px) {
+    #message {
+        width: 60%;
+        left: 20%;
+    }
+    .wthree-abt-info {
+        padding: 2%;
+    }
+	.portfolio-area li {
+		width: 234px;
+	}
+}
+@media (max-width:1080px) {
+    #message {
+        width: 80%;
+        left: 10%;
+    }
+    .portfolio-area li {
+        width: 24%;
+        margin: 0.5%;
+		width: 247px;
+    }
+    .w3ls-interior-design-grid-right h3 {
+        font-size: 23px;
+        margin-top: 8px;
+        letter-spacing: 1px;
+    }
+}
+@media (max-width:1050px) {
+	.portfolio-area li {
+		width: 240px;
+	}
+}
+@media (max-width:1024px) {
+    .w3ls-video-info p {
+        width: 75%;
+    }
+	.portfolio-area li {
+		width: 234px;
+	}
+}
+
+@media (max-width:991px) {
+	.collapse.show {
+		z-index: 9;
+	}
+    .navbar-toggler {
+        background-color: #ffffff;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        text-align: center;
+    }
+    ul.navbar-nav {
+        background: rgba(0, 0, 0, 0.5607843137254902);
+        padding: 12px 0;
+    }
+    .agileits-s-grid h4 {
+        font-size: 18px;
+    }
+    .wthree-abt-info {
+        padding: 6%;
+    }
+    .w3ls-video-info h1.heading1 {
+        font-size: 21px;
+        letter-spacing: 0px;
+    }
+    .w3ls-video-info p {
+        width: 95%;
+        line-height: 26px;
+    }
+    .navbar-nav .dropdown-menu {
+        text-align: center;
+    }
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+	.portfolio-area li {
+		width: 226px;
+	}
+}
+@media (max-width:900px) {
+	.portfolio-area li {
+		width: 204px;
+	}
+}
+@media (max-width:800px) {
+    #message p {
+        font-size: 18px;
+    }
+    .stats_info h4 {
+        font-size: 14px;
+    }
+	.portfolio-area li {
+		width: 243px;
+	}
+}
+@media (max-width:768px) {
+    #message p {
+        font-size: 17px;
+    }
+    header h3 {
+        font-size: 38px;
+    }
+    .portfolio-area li {
+        width: 31.333%;
+        margin: 1%;
+		width: 225px;
+    }
+}
+@media (max-width:736px) {
+    #message {
+        width: 86%;
+        left: 7%;
+    }
+    .portfolio-categ li a {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+	.portfolio-area li {
+		width: 215px;
+	}
+}
+@media (max-width:667px) {
+    #message p {
+        font-size: 16px;
+        margin: 0.8em 0;
+    }
+    .w3-agile-google-map iframe {
+        height: 350px;
+    }
+	.portfolio-area li {
+		width: 194px;
+	}
+}
+@media (max-width:640px) {
+	.portfolio-area li {
+		width: 185px;
+	}
+}
+@media(max-width:600px) {
+    .w3-agile-google-map iframe {
+        height: 320px;
+    }
+	.portfolio-categ li {
+		padding: 6px 12px;
+	}
+	.portfolio-area li {
+		width: 173px;
+	}
+}
+@media(max-width:568px) {
+    .portfolio-categ li {
+        padding: 4px 10px;
+        font-size: 1em;
+    }
+    header h3 {
+        font-size: 34px;
+    }
+    .agileits-s-grid p {
+        font-size: 14px;
+    }
+    header p {
+        font-size: 14px;
+    }
+    .portfolio-area li {
+        width: 48%;
+        margin: 1%;
+		width: 250px;
+    }
+    .w3ls-interior-design-grid-right p {
+        margin: 12px 0 0;
+    }
+}
+@media(max-width:480px) {
+    .portfolio-categ li {
+        padding: 3px 6px;
+        margin: 0 0em;
+    }
+    .w3ls-interior-design-grid-right h3 {
+        font-size: 22px;
+    }
+	.portfolio-area li {
+		width: 207px;
+	}
+}
+@media(max-width:440px) {
+    .portfolio-categ li a {
+        letter-spacing: 0px;
+    }
+    .w3ls-interior-design-grid-right h3 {
+        letter-spacing: 0px;
+    }
+    .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+	.portfolio-area li {
+		width: 188px;
+	}
+}
+@media(max-width:414px) {
+    .testimonials p.speech {
+        padding: 35px;
+        font-size: 15px;
+        margin: 15px;
+    }
+    .w3ls-interior-design-grid-right h3 {
+        font-size: 20px;
+    }
+	.portfolio-area li {
+		width: 176px;
+	}
+}
+@media(max-width:384px) {
+    header h3 {
+        font-size: 30px;
+    }
+	.portfolio-area li {
+		width: 161px;
+	}
+}
+@media(max-width:375px) {
+    .portfolio-area li {
+        width: 100%;
+		width: 328px;
+        margin: 3% 0px;
+    }
+    #message p {
+        font-size: 15px;
+    }
+}
+@media(max-width:320px) {
+    header h3 {
+        letter-spacing: 0px;
+    }
+	.portfolio-area li {
+		width: 273px;
+	}
+}
+

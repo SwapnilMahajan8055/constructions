@@ -1,0 +1,412 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block title %}
+   About Blog
+{% endblock %}
+<body>
+    {% block body %}
+
+    <div class="carousel-inner">
+        <div class="item active">
+          <img src="{% static 'home/image/1.jpg' %}" alt="Chicago" style="width:100%;" >
+           <div class="carousel-caption">
+           <div class="hero-image">
+            <div class="hero-text">
+              <a class="center" href="/user/login/">
+                <img src="{% static 'home/image/logo1.png' %}" alt="Avatar" width="100px" class="image">
+              </a>
+              <h3 class="text-white">Khandeshi construction</h3>            
+              <a href="/user/login/" class="btn btn-dark btn-lg" role="button" aria-pressed="true">LOGIN..</a>
+              <a href="{% url 'register'%}" class="btn btn-dark btn-lg" role="button" aria-pressed="true">HIRE ME..</a>            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+      
+
+
+
+    <header class="w3-heading py-lg-5 pt-5 text-center">
+        <h1>Services</h1>
+    </header>
+<main class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container">
+        <section class="content-section bg-dark " >
+            <main class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                           <div class="container" margin-top:90px>
+                             <img src="{% static 'home/image/pc.jpg' %}" alt="Avatar" width="300px" class="image">
+                           </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="container">
+                            <h3 class="text-white text-center">Pre-construction services</h3>   
+                            <p class="text-warning"> Everything starts with pre-construction services. As soon as the journey for a new building project begins, there is a number of tasks and questions that the team should look into. Simply put, this is the time where an idea is gradually turning into an actual project and that practical aspects of the vision in discussion are analysed. </p>      
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <section class="content-section bg-dark " >
+            <main class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                           <div class="container">
+                             <img src="{% static 'home/image/pm.jpg' %}" alt="Avatar" width="300px" class="image">
+                           </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="container">
+                            <h3 class="text-white text-center">project management</h3>  
+                            <p class="text-warning"> Once the project starts progressing, there are many different elements that should be taken into consideration. From project initiation to closure, there should be solid collaboration between the various agents and good team coordination.
+
+
+                                It goes without saying that, data plays a substantial role in this process and allow quick and well-analysed decisions. </p>       
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+        <section class="content-section bg-dark " >
+            <main class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                           <div class="container">
+                             <img src="{% static 'home/image/db.jpeg' %}" alt="Avatar" width="300px" class="image">
+                           </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="container">
+                            <h3 class="text-white text-center">Design-build</h3>
+                            <p class="text-warning">The design-build method has attracted a lot of attention lately. Having the same team providing both the design and construction services can boost your project’s efficiency and minimize risk. Moreover, keeping the design and construction phases connected can help you obtaining a better understanding of the potential challenges that might come along you</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+    </section>    
+    <section class="content-section bg-dark " >
+        <main class="container">
+            <div class="row">
+                <div class="col-md-4">
+                       <div class="container">
+                         <img src="{% static 'home/image/bs.jfif' %}" alt="Avatar" width="300px" class="image">
+                       </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <h3 class="text-white text-center">Building services</h3>
+                        <p class="text-warning"> 
+                            Our design/build services are the right fit for many of our clients.  This integrated approach encourages each discipline at the table to offer valuable information focused on design, constructability and budget throughout all phases of the project.  Ideas build upon one another, and designs progress with creative solutions and cost- and time-saving alternatives that ensure your vision.  From concept to completion, our team works seamlessly to create a streamlined and rewarding client experience, a process that delivers real value, and a final product that exceeds expectations. </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="content-section bg-dark " >
+        <main class="container">
+            <div class="row">
+                <div class="col-md-4">
+                       <div class="container">
+                         <img src="{% static 'home/image/as.jpg' %}" alt="Avatar" width="300px" class="image">
+                       </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <h3 class="text-white text-center">Architectural Design</h3>
+                        <p class="text-warning"> 
+                            After the standards are set during the pre-construction phase, the client will have a comprensive understanding of the and financial needs, project schedule, cost, job site, and your facility’s architectural and mechanical requirements. Next, your construction team and project managers partner with the architectural team to value engineer cost savings into the design.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="content-section bg-dark " >
+        <main class="container">
+            <div class="row">
+                <div class="col-md-4">
+                       <div class="container">
+                         <img src="{% static 'home/image/ms.jpg' %}" alt="Avatar" width="300px" class="image">
+                       </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <h3 class="text-white text-center">Mechanical Services</h3>   
+                        <pre class="text-warning">
+1.Firefighting Systems
+2.Elevators & Escalators
+3.HVAC Systems (heating, ventilation, and air-conditioning
+ systems)
+4.Gas Supply Systems (such as for heating and cooking in
+residential buildings, or oxygen and nitrogen in hospitals)
+5.Compressed Air Systems used in industries  
+                        </pre>     
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="content-section bg-dark " >
+        <main class="container">
+            <div class="row">
+                <div class="col-md-4">
+                       <div class="container">
+                         <img src="{% static 'home/image/es.jpg' %}" alt="Avatar" width="300px" class="image">
+                       </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <h3 class="text-white text-center">Electrical Services</h3>         
+                        <pre class="text-warning">
+1.Power Supply
+2.Backup Power (such as diesel generators)
+3.Emergency Power (such as battery-based 
+uninterrupted power supply)
+                        </pre>
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>  
+    <section class="content-section bg-dark " >
+        <main class="container">
+            <div class="row">
+                <div class="col-md-4">
+                       <div class="container">
+                         <img src="{% static 'home/image/ps.png' %}" alt="Avatar" width="300px" class="image">
+                       </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container">
+                        <h3 class="text-white text-center">Plumbing Systems</h3>         
+                        <pre class="text-warning"> 
+1.Water Supply
+2.Drainage of Wastes
+3.Water Recycling Systems 
+4.Rainwater Harvesting
+5.Storm Water Drainage
+
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>  
+    </div>
+    </div>   
+    </div>
+</main>
+
+<section class="content-section" style="background-color:rgb(6, 25, 27);" >
+<div class="container " style="background-color:rgb(6, 25, 27);">
+    <div class="row text-center text-white">
+        <div class="col-lg-8 mx-auto">
+            <br>
+            <br>
+            <h1 class="display-4 text-white"><b>OFFICE TEAM</b></h1>
+            <p class="lead mb-0 text-warning">This My<b> KD </b>(Khandeshi Construction) Company Team</p>
+            <br>
+            <br>
+        </div>
+    </div>
+</div><!-- End -->
+
+
+<div class="container" style="background-color:rgb(6, 25, 27);">
+    <div class="row text-center">
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-4.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Manuella Nevoresky</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-2.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Samuel Hardy</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-1.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">Tom Sunderland</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
+
+        <!-- Team item -->
+        <div class="col-xl-3 col-sm-6 mb-5">
+            <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://d19m59y37dris4.cloudfront.net/university/1-1-1/img/teacher-7.jpg" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                <h5 class="mb-0">John Tarly</h5><span class="small text-uppercase text-muted">CEO - Founder</span>
+                <ul class="social mb-0 list-inline mt-3">
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div><!-- End -->
+    </div>
+</div>
+</section>
+
+
+        <section class="contact content-section" style="background-color: rgba(29, 19, 3, 0.377);">
+        <div class="container-fluid py-md-5 py-3 py-sm-2 text-center">
+            <header>
+                <h1 class="text-warning"><b>CURRENT PROJECTS</b></h1>
+                <br>
+                <br>
+            </header>
+                 
+                    <div>
+                    <a class="image-gal" href="{% static 'home/image/c1.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/c1.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/d.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/d.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/e.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/e.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/f.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/f.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/ms.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/ms.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/i.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/i.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/l.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/l.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/v.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/v.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/w.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/w.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/y.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/y.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                </div>
+          
+      
+      
+        </div>
+        <!-- //gallery container -->
+      </section>
+
+
+      <section class="contact content-section" style="background-color: rgba(8, 4, 12, 0.219);">
+      <div class="container-fluid py-md-5 py-3 py-sm-2 text-center">
+          <header>
+              <h1 class="text-warning"><b>COMPLETED PROJECTS</b></h1>
+              <br>
+              <br>
+          </header>
+               
+                  <div>
+                   <a class="image-gal" href="{% static 'home/image/a3.jpg' %}" data-gal="prettyPhoto[gallery]">
+                      <img src="{% static 'home/image/a3.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                    </a>
+                    <a class="image-gal" href="{% static 'home/image/a4.jpg' %}" data-gal="prettyPhoto[gallery]">
+                    <img src="{% static 'home/image/a4.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                  </a>
+                  <a class="image-gal" href="{% static 'home/image/a6.jpg' %}" data-gal="prettyPhoto[gallery]">
+                    <img src="{% static 'home/image/a6.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                  </a>
+                  <a class="image-gal" href="{% static 'home/image/c.jpg' %}" data-gal="prettyPhoto[gallery]">
+                    <img src="{% static 'home/image/c.jpg' %}" alt="a1" width="400px" height="300px" class="image">
+                  </a>    
+              </div>  
+      </div>
+      <!-- //gallery container -->
+    </section>
+
+      
+
+
+           
+
+<section class="contact content-section" style="background-color:rgba(22, 3, 12, 0.719);">
+    <div class="container">
+        <header class="w3-heading py-lg-5 pt-5 text-center">
+            <h1 class="text-white"><b>Contact Us</b></h1>
+        </header>
+        <div class="row form-container py-3">
+            <div class="col-md-8 contact-form">
+                <h4 class="mb-4 text-white">Drop us a line</h4>
+                    <form id="contactForm" method="post" action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name..." value="" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your email..." value="" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone..." value="" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" name="message" placeholder="Your message..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                          <a class="btn btn-success " href="/user/login/">Send</a> <br><br>
+                        </div>
+                    </form>
+            </div>
+            <div class="col-md-4 agile-w3ls-contact-address mt-sm-4 mt-0">
+                <h4 class="mb-4 text-white">Address</h4>
+                <address>
+                    <p class="text-white">
+                        <a href="https://www.google.com/maps/place/Parola,+Maharashtra+425111/@20.8792207,75.1026247,14z/data=!3m1!4b1!4m5!3m4!1s0x3bd9371ab47a2ab1:0xea105c96acec6b28!8m2!3d20.8822034!4d75.1253492" ><b>🌏 <br> Parola, Jalgoan, Maharashtra, India ,Pin code :425401</code></b></a>
+                    </p>        
+                    <p class="text-white">
+                        <a href="mailto:info@example.com"><b>📩  mahajansp1998@gmail.com</b></a>
+                    </p>
+                    <p class="text-white">
+                        <a href="tel:+91-73509-42634"> <b>☎  +91 8055925548</b></a>
+                    </p>
+                </address>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+    {% endblock %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</body>
